@@ -1,43 +1,48 @@
-@import './login.css';
-@import './button.css';
+@import "./login.css";
+@import "./button.css";
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 @font-face {
-    font-family: 'Airbnb';
-    src: url('../fonts/AirbnbCereal-Medium.ttf') format('truetype');
+  font-family: "Airbnb";
+  src: url("../fonts/AirbnbCereal-Medium.ttf") format("truetype");
 }
 
 body {
-    font-family: Airbnb;
+  font-family: Airbnb;
 }
 
 a {
-    text-decoration: none;
-    color: #D0cccc;
+  text-decoration: none;
+  color: #d0cccc;
 }
 
 label {
-    font-family: Airbnb;
-    font-size: 17px;
-    color: #d0cccc;
-    width: 100%;
+  font-family: Airbnb;
+  font-size: 17px;
+  color: #d0cccc;
+  width: 100%;
 }
 
-input {
-    font-family: Airbnb;
-    font-size: 20px;
-    color: #424242;
-    width: 100%;
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  font-family: Airbnb;
+  font-size: 20px;
+  color: #424242;
+  width: 100%;
 }
 
-input[type="checkbox"] {
-    border: 1px solid black;
+input[type="text"],
+input[type="email"],
+input[type="password"],
+label {
+  border: none;
+  display: block;
 }
 
-input, label {
-    border: none;
-    display: block;
+li {
+  list-style: none;
 }

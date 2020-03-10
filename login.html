@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
+    <title>Login</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./assets/css/main.css" />
@@ -15,9 +15,9 @@
         <h1 class="title">to the world</h1>
       </div>
       <div class="auth-form">
-        <div class="logo">
+        <a href="#" class="logo">
           <img src="./assets/img/bookshelf.png" alt="Logo" />
-        </div>
+        </a>
         <div class="intro">
           <h1 class="title login-title">
             Login
@@ -50,16 +50,19 @@
           </div>
           <div class="form-group checkbox">
             <div class="check">
-              <input type="checkbox" name="check" />
-              <label for="check">Remember Me</label>
+              <label class="checkbox-label">
+                <input type="checkbox" />
+                <span class="checkbox-custom"></span>
+              </label>
+              <p class="remember">Remember Me</p>
             </div>
             <div class="forgot">
               <a href="#" class="forgot-password">Forgot Password?</a>
             </div>
           </div>
           <div class="form-group button-group">
-            <a href="" class="button">Login</a>
-            <a href="" class="button">Sign Up</a>
+            <a href="#" class="button">Login</a>
+            <a href="./register.html" class="button">Sign Up</a>
           </div>
         </form>
         <div class="footer">
