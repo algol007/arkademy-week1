@@ -1,0 +1,100 @@
+.cover-img {
+  background-image: url("../img/covernya.png");
+  background-size: cover;
+  background-position: center center;
+  min-height: 450px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+}
+
+.back {
+  background-color: #ffffff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding: 18px;
+}
+
+.control {
+  display: flex;
+  color: #ffffff;
+  justify-content: space-around;
+}
+
+.img-overlay {
+  position: absolute;
+  top: 250px;
+  right: 50px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  max-width: 850px;
+}
+
+.detail-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.detail-desc {
+  display: flex;
+  width: 90%;
+  margin: 30px auto 100px;
+  justify-content: space-between;
+}
+
+.status h4 {
+  color: #99d815;
+  font-size: 30px;
+}
+
+.button-yellow {
+  background-color: #fbcc38;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.detail-book h1 {
+  font-size: 50px;
+}
+
+.detail-book h5 {
+  font-size: 20px;
+}
+
+.detail-text {
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+.button-borrow {
+  display: flex;
+  align-items: flex-end;
+}
+
+.button-borrow a {
+  border-radius: 10px;
+  padding: 10px 30px;
+  font-size: 30px;
+}
+
+@media (max-width: 1200px) {
+  .detail-desc {
+    flex-direction: column;
+    margin-top: 150px;
+  }
+  .button-borrow {
+    margin-top: 50px;
+  }
+}
