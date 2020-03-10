@@ -9,50 +9,45 @@
 }
 
 .auth-image {
+    width: 60%;
     padding: 80px 50px;
     background-image: url('../img/mollie-sivaram-_1gBVgy8gIU-unsplash.png');
     background-size: cover;
-    min-height: 100vh;
     background-position: center center;
+    /* height: 700px; */
+    height: 100vh;
 }
 
 .auth-form {
-    width: 60%;
+    width: 40%;
     display: flex;
     flex-direction: column;
-    padding: 80px 50px;
+    padding: 80px 50px 20px;
+    min-height: 100vh;
+    background: #ffffff;
+    background-size: cover;
 }
 
 .logo {
-    display: block;
     position: absolute;
     top: 20px;
     right: 20px;
+    width: 100px;
+    height: 100px;
 }
 
 .login-title, .login-intro {
     color: #424242;
 }
 
+.intro {
+    padding: 50px 0;
+}
+
 .form-group {
     border-radius: 5px;
     border: 1px solid #e0e0e0;
-    padding: 10px;
-}
-
-label {
-    font-size: 17px;
-    color: #d0cccc;
-}
-
-input {
-    font-size: 20px;
-    color: #424242;
-}
-
-input, label {
-    border: none;
-    display: block;
+    padding: 10px 20px;
 }
 
 .login-intro {
@@ -60,10 +55,54 @@ input, label {
 }
 
 .checkbox {
+    margin: 20px 0;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.base-input {
+    box-shadow: 0 5px 10px #d0cccc;
 }
 
 .forgot-password {
     color: #424242;
+}
+
+.checkbox, .button-group {
+    border: none;
+    padding: 0;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button-group {
+    margin: 50px 0;
+}
+
+.intro-end {
+    font-weight: bold;
+    color: #d0cccc;
+}
+
+.intro-end a {
+    font-weight: normal;
+    color: #000000;
+}
+
+.footer {
+    margin-top: 50px;
+}
+
+@media (max-width: 992px) {
+    .auth-image {
+        display: none;
+    }
+    .auth-form {
+        width: 100%;
+    }
 }
