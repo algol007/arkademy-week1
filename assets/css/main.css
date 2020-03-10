@@ -1,5 +1,6 @@
 @import "./login.css";
 @import "./button.css";
+@import "./detail.css";
 * {
   margin: 0;
   padding: 0;
@@ -45,4 +46,9 @@ label {
 
 li {
   list-style: none;
+}
+
+button {
+  border: none;
+  outline: none;
 }
