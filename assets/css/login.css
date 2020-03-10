@@ -1,0 +1,69 @@
+.title {
+    color: white;
+    font-size: 64px;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.auth-image {
+    padding: 80px 50px;
+    background-image: url('../img/mollie-sivaram-_1gBVgy8gIU-unsplash.png');
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center center;
+}
+
+.auth-form {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 50px;
+}
+
+.logo {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.login-title, .login-intro {
+    color: #424242;
+}
+
+.form-group {
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+}
+
+label {
+    font-size: 17px;
+    color: #d0cccc;
+}
+
+input {
+    font-size: 20px;
+    color: #424242;
+}
+
+input, label {
+    border: none;
+    display: block;
+}
+
+.login-intro {
+    font-size: 17px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.forgot-password {
+    color: #424242;
+}
