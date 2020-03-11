@@ -1,0 +1,194 @@
+@import "http://netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+.sidebar {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  box-shadow: 3px 2px 20px #999999;
+  position: absolute;
+  width: 300px;
+  min-height: 900px;
+  height: 100vh;
+  background: #ffffff;
+  text-align: center;
+  padding: 50px;
+}
+
+.profile {
+  margin: 10px 0 50px;
+}
+
+.profile img {
+  width: 150px;
+  height: 150px;
+}
+
+.profile h4 {
+  font-size: 25px;
+  margin-top: 1em;
+}
+
+.sidebar-menu {
+  text-align: left;
+  margin-top: 4em;
+}
+
+.sidebar-menu>a {
+  color: #000000;
+  font-size: 20px;
+  margin: 1em 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+}
+
+.custom-navbar {
+  width: 100%;
+  height: 60px;
+  background-color: #ffffff;
+  box-shadow: 3px 2px 20px #999999;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.all-menu, .search-box, .brand-logo {
+  width: 80%;
+  height: 100%;
+}
+
+.all-menu {
+  padding: 10px 0;
+}
+
+.all-menu__list {
+  padding-left: 20px;
+  display: flex;
+}
+
+.search-box {
+  padding: 10px 0;
+}
+
+.search-icon {
+  font-family: "Airbnb", FontAwesome;
+}
+
+.search-box input {
+  padding: 0 30px;
+  border-radius: 20px;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-logo img {
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+}
+
+.brand-logo a {
+  color: #000000;
+  font-size: 20px;
+}
+
+.main-content {
+  overflow: hidden;
+}
+
+.book-slider {
+  width: 100%;
+  /* background-color: #999999; */
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.dashboard-wrap {
+  padding-left: 300px;
+}
+
+.list-book {
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.main {
+  margin: 0 auto;
+}
+
+.center {
+  text-align: center;
+}
+
+.card {
+  border-radius: 15px;
+}
+
+.title-list-book {
+  margin-top: 350px;
+  display: flex;
+  align-items: flex-start;
+  padding: 20px 90px;
+}
+
+.book-slider {
+  display: flex;
+  align-items: center;
+  padding: 20px 0 20px 300px;
+  overflow: hidden;
+  margin-right: -100px;
+}
+
+.box-book-list {
+  width: 600px;
+  height: 200px;
+  display: flex;
+  overflow: hidden;
+  margin: 20px 30px;
+  flex-direction: column-reverse;
+}
+
+.slider-1 {
+  background-image: url('../img/covernya2.png');
+  background-size: cover;
+}
+
+.slider-2 {
+  background-image: url('../img/d96eff85-ae75-4f56-bdfc-dd7a055e7400.png');
+  background-size: cover;
+}
+
+.slider-3 {
+  background-image: url('../img/laskar.png');
+  background-size: cover;
+}
+
+.main-list {
+  height: 250px;
+}
+
+.card {
+  margin: 20px 5px;
+}
+
+.overlay-slider {
+  height: 50%;
+  width: 100%;
+  background: rgba(0, 0, 0, .2);
+  padding: 30px;
+  color: #ffffff;
+}

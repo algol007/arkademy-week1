@@ -64,15 +64,6 @@
   font-size: 30px;
 }
 
-.button-yellow {
-  background-color: #fbcc38;
-  color: #ffffff;
-  font-size: 17px;
-  font-weight: bold;
-  padding: 10px 20px;
-  border-radius: 20px;
-}
-
 .detail-book h1 {
   margin-top: 20px;
   font-size: 50px;
@@ -85,27 +76,6 @@
 .detail-text {
   font-size: 20px;
   margin-top: 40px;
-}
-
-.button-borrow {
-  display: flex;
-  align-items: flex-end;
-}
-
-.button-borrow a {
-  border-radius: 10px;
-  padding: 10px 30px;
-  font-size: 30px;
-}
-
-.button-save {
-  /* padding: 0 20px; */
-  border: none;
-  background-color: #f4cf5d;
-}
-.button-save:hover {
-  border: none;
-  background-color: #fbcc38;
 }
 
 @media (max-width: 1200px) {
