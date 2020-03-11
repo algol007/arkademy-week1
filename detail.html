@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
+    <title>Detail Book</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
@@ -21,7 +21,7 @@
           <a href="#"><img src="./assets/img/Arrow.png" alt="Back"/></a>
         </div>
         <div class="control">
-          <a href="#" data-toggle="modal" data-target="#borrowModal">Edit</a>
+          <a href="#" data-toggle="modal" data-target="#editModal">Edit</a>
           <a href="#" onclick="successInfo()">Delete</a>
         </div>
       </div>
@@ -66,7 +66,7 @@
     <!-- Modal -->
     <div
       class="modal fade bd-example-modal-lg"
-      id="borrowModal"
+      id="editModal"
       tabindex="-1"
       role="dialog"
       aria-labelledby="exampleModalLabel"
@@ -78,7 +78,7 @@
             <h5 class="modal-title" id="exampleModalLabel">Edit Data</h5>
             <button
               type="button"
-              class="close"
+              class="close text-danger"
               data-dismiss="modal"
               aria-label="Close"
             >
