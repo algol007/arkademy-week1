@@ -20,26 +20,26 @@ a {
   color: #d0cccc;
 }
 
-label {
+a:hover {
+  text-decoration: none;
+}
+
+.login-label {
   font-family: Airbnb;
   font-size: 17px;
   color: #d0cccc;
   width: 100%;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="password"] {
+.login-input {
   font-family: Airbnb;
   font-size: 20px;
   color: #424242;
   width: 100%;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="password"],
-label {
+.login-input,
+.login-label {
   border: none;
   display: block;
 }
