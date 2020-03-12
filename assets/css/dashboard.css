@@ -44,7 +44,7 @@
   margin-top: 4em;
 }
 
-.sidebar-menu>a {
+.sidebar-menu > a {
   color: #000000;
   font-size: 20px;
   margin: 1em 0;
@@ -67,7 +67,9 @@
   align-items: center;
 }
 
-.all-menu, .search-box, .brand-logo {
+.all-menu,
+.search-box,
+.brand-logo {
   width: 80%;
   height: 100%;
 }
@@ -175,17 +177,17 @@
 }
 
 .slider-1 {
-  background-image: url('../img/covernya2.png');
+  background-image: url("../img/covernya2.png");
   background-size: cover;
 }
 
 .slider-2 {
-  background-image: url('../img/d96eff85-ae75-4f56-bdfc-dd7a055e7400.png');
+  background-image: url("../img/d96eff85-ae75-4f56-bdfc-dd7a055e7400.png");
   background-size: cover;
 }
 
 .slider-3 {
-  background-image: url('../img/laskar.png');
+  background-image: url("../img/laskar.png");
   background-size: cover;
 }
 
@@ -200,13 +202,14 @@
 .overlay-slider {
   height: 50%;
   width: 100%;
-  background: rgba(0, 0, 0, .2);
+  background: rgba(0, 0, 0, 0.2);
   padding: 30px;
   color: #ffffff;
   border-radius: 20px 20px 0 0;
 }
 
-a.custom-card, a.custom-card:hover {
+a.custom-card,
+a.custom-card:hover {
   color: inherit;
 }
 
@@ -229,7 +232,8 @@ a.custom-card, a.custom-card:hover {
   transform: rotate(180deg);
 }
 
-.next, .prev {
+.next,
+.prev {
   background-color: #ffffff;
   padding: 10px 15px;
   border-radius: 50%;

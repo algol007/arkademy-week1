@@ -2,7 +2,8 @@
 @import "./button.css";
 @import "./detail.css";
 @import "./dashboard.css";
-
+@import "./landing.css";
+@import "./home.css";
 * {
   margin: 0;
   padding: 0;
