@@ -45,8 +45,7 @@ a:hover {
   width: 100%;
 }
 
-.login-input,
-.login-label {
+.login-input, .login-label {
   border: none;
   display: block;
 }
@@ -57,5 +56,9 @@ li {
 
 button {
   border: none;
+  outline: none;
+}
+
+input:focus {
   outline: none;
 }
