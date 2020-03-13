@@ -1,42 +1,73 @@
-.cover,
-.home-overlay {
+.cover, .home-overlay {
   background: url("../img/web.jpg");
   width: 100%;
   height: 100vh;
   background-position: center center;
   background-size: cover;
+  z-index: -1;
 }
 
-.social-media,
-.mentor,
-.footer-end {
+.cover-overlay {
+  background: rgba(0, 0, 0, .8);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.cover-content {
+  margin: 0 auto;
+  z-index: 1;
+  display: flex;
+  color: #ffffff;
+  text-align: center;
+  flex-direction: column;
+  align-content: center;
+  padding: 250px 0;
+}
+
+.cover-form form, .home-overlay__content form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0;
+}
+
+.cover-form form input, .home-overlay__content form input {
+  margin: 0 5px;
+}
+
+.social-media, .mentor, .footer-end {
   background: #eeeeee;
   padding: 100px 0;
 }
 
-.social-card,
-.my-gallery,
-.mentor-list {
+.social-card, .my-gallery, .mentor-list {
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
 }
 
-.card-home,
-.card-mentor {
+.card-home, .card-mentor {
   text-align: center;
   background: transparent;
   border: none;
   z-index: 0;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.card-home:hover, .card-mentor:hover {
+  transition: 1s;
+  box-shadow: 10px 10px #424242;
 }
 
 .card-home i {
   /* text-align: center; */
   font-size: 100px;
+  color: #424242;
 }
 
-a.card-body,
-a.card-body:hover {
+a.card-body, a.card-body:hover {
   color: inherit !important;
 }
 
@@ -44,25 +75,49 @@ a.card-body:hover {
   width: 100%;
 }
 
-.my-gallery__img {
+.mg-satu {
   background: url("../img/web.jpg");
   background-position: center center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.my-gallery__img,
-.my-gallery__text {
-  width: 50%;
+.mg-dua {
+  background: url("../img/laptop.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mg-tiga {
+  background: url("../img/komputer.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.my-gallery__img {
   min-height: 400px;
-}
-
-.footer-option,
-.footer-social {
   width: 50%;
 }
 
 .my-gallery__text {
-  padding: 100px;
+  width: 50%;
+}
+
+.gallery-overlay {
+  background: rgba(0, 0, 0, .5);
+  width: 100%;
+  height: 400px;
+  position: absolute;
+}
+
+.footer-option, .footer-social {
+  width: 50%;
+}
+
+.my-gallery__text {
+  padding: 7rem;
 }
 
 .mentor-list img {
@@ -72,13 +127,23 @@ a.card-body:hover {
 }
 
 .home-overlay {
+  background-attachment: fixed;
+}
+
+.home-overlay, .cover-overlay__home {
   height: 250px !important;
-  padding: 100px 0;
+  /* padding: 100px 0; */
 }
 
 .home-overlay__content {
+  z-index: 1;
   margin: 0 auto;
   text-align: center;
+}
+
+.home-overlay__content {
+  color: #ffffff;
+  padding: 80px 0;
 }
 
 .footer-end__content {
@@ -91,8 +156,7 @@ a.card-body:hover {
   padding: 30px 0 !important;
 }
 
-.footer-menu,
-.footer-social {
+.footer-menu, .footer-social {
   display: flex;
 }
 
@@ -100,9 +164,15 @@ a.card-body:hover {
   padding-right: 10px;
 }
 
+.footer-menu li a {
+  /* flex-wrap: wrap !important; */
+  color: #007bff !important;
+}
+
 .footer-social li a {
   font-size: 30px;
   margin: 0 10px;
+  color: #007bff !important;
 }
 
 .footer-social {
@@ -110,28 +180,56 @@ a.card-body:hover {
 }
 
 @media (max-width: 992px) {
-  .social-card,
-  .my-gallery,
-  .mentor-list,
-  .footer-end__content {
+  .my-brand {
+    display: none;
+  }
+  .social-card, .my-gallery, .mentor-list, .footer-end__content {
     flex-direction: column;
   }
   .my-gallery-2 {
     flex-direction: column-reverse !important;
   }
-  .my-gallery__img,
-  .my-gallery__text,
-  .footer-option {
+  .my-gallery__img, .my-gallery__text, .footer-option {
     width: 100%;
   }
-  .footer-menu,
-  .footer-social {
+  .footer-menu, .footer-social {
     justify-content: center;
   }
-
-  .footer-option,
-  .footer-social {
+  .footer-option, .footer-social {
     margin: 0 auto;
     text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .my-gallery__text {
+    padding: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .home-overlay__content {
+    padding: 50px 0;
+  }
+  .home-overlay__content h2 {
+    font-size: 20px;
+  }
+  .cover-form form input {
+    margin: 1em 0;
+  }
+  .home-overlay__content form input {
+    margin: 0.2em 0;
+  }
+  .home-overlay__content form {
+    flex-direction: column;
+  }
+  .cover-content {
+    padding: 150px 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .cover-content {
+    padding: 100px 0;
   }
 }

@@ -28,12 +28,12 @@
         <a class="navbar-brand" href="#">
           <img src="./assets/img/instagram.png" width="80" height="40" alt="" />
         </a>
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand my-brand" href="#">
           Ady Rahmansyah
         </a>
         <a
           href="./login.html"
-          class="btn btn-outline-success my-2 my-sm-0"
+          class="btn btn-outline-primary my-2 my-sm-0"
           type="submit"
         >
           Login
@@ -43,8 +43,28 @@
     <!-- End Navbar -->
     <!-- Start Cover -->
     <div class="cover">
-      <!-- <div class="overlay"></div> -->
-      <div class="container"></div>
+      <div class="cover-overlay"></div>
+      <div class="container">
+        <div class="cover-content">
+          <div class="cover-text">
+            <h1>Want to be professional web developer?</h1>
+            <h1>Join us now!</h1>
+          </div>
+          <div class="cover-form">
+            <form class="form-inline">
+              <input
+                type="text"
+                class="form-control form-control-lg"
+                id="email"
+                placeholder="Your Email Address.."
+              />
+              <button type="submit" class="btn btn-lg btn-primary">
+                Sign Up!
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- End Cover -->
     <!-- Start Social Media -->
@@ -52,8 +72,8 @@
       <div class="container">
         <div class="social-card">
           <div class="card card-home" style="width: 18rem;">
-            <i class="fab fa-instagram"></i>
-            <a href="" class="card-body">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="card-body">
               <h5 class="card-title">Instagram</h5>
               <p class="card-text">
                 Some quick example text to build on the card title and make up
@@ -88,7 +108,9 @@
     <!-- Start Gallery -->
     <section class="gallery">
       <div class="my-gallery">
-        <div class="my-gallery__img"></div>
+        <div class="my-gallery__img mg-satu">
+          <!-- <div class="gallery-overlay"></div> -->
+        </div>
         <div class="my-gallery__text">
           <h3>Gallery #1</h3>
           <p>
@@ -101,7 +123,7 @@
       </div>
       <div class="my-gallery my-gallery-2">
         <div class="my-gallery__text">
-          <h3>Gallery #1</h3>
+          <h3>Gallery #2</h3>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex,
             dolores. Laudantium, praesentium reiciendis nesciunt delectus labore
@@ -109,12 +131,16 @@
             harum corporis eveniet consectetur? Non, quis!
           </p>
         </div>
-        <div class="my-gallery__img"></div>
+        <div class="my-gallery__img mg-dua">
+          <!-- <div class="gallery-overlay"></div> -->
+        </div>
       </div>
       <div class="my-gallery">
-        <div class="my-gallery__img"></div>
+        <div class="my-gallery__img mg-tiga">
+          <!-- <div class="gallery-overlay"></div> -->
+        </div>
         <div class="my-gallery__text">
-          <h3>Gallery #1</h3>
+          <h3>Gallery #3</h3>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex,
             dolores. Laudantium, praesentium reiciendis nesciunt delectus labore
@@ -177,11 +203,12 @@
     <!-- End Mentor -->
     <!-- Start Overlay -->
     <section class="home-overlay">
+      <div class="cover-overlay cover-overlay__home"></div>
       <div class="container">
         <div class="home-overlay__content">
           <h2>Ready to join Arkademy ?</h2>
           <form class="form-inline">
-            <div class="form-group mx-sm-3 mb-2">
+            <div class="form-group mb-2">
               <input
                 type="text"
                 class="form-control"
@@ -190,7 +217,7 @@
               />
             </div>
             <button type="submit" class="btn btn-primary mb-2">
-              Confirm identity
+              Sign Up!
             </button>
           </form>
         </div>
