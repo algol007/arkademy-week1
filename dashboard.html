@@ -24,7 +24,7 @@
     <div class="dashboard-wrap">
       <div class="sidebar">
         <div class="menu-button">
-          <button>
+          <button class="sidebar-button">
             <img src="./assets/img/menu.png" alt="toggle-menu" />
           </button>
         </div>
@@ -42,8 +42,11 @@
           <a href="./login.html">Logout</a>
         </div>
       </div>
-      <div class="main">
+      <section id="main" class="main">
         <div class="custom-navbar">
+          <button class="toggle-button">
+            <img src="./assets/img/menu.png" alt="toggle-menu" />
+          </button>
           <div class="all-menu">
             <ul class="all-menu__list">
               <li class="nav-item dropdown">
@@ -99,38 +102,52 @@
             <a href="./index.html">Library</a>
           </div>
         </div>
-        <div class="main-content">
-          <div class="rowsss">
-            <div class="book-slider">
-              <div class="box-book-list slider-1">
-                <div class="overlay-slider">
-                  <h4>Dilan 1990</h4>
-                  <p>Pidi Baiq</p>
-                </div>
-              </div>
-              <div class="box-book-list main-list slider-2">
-                <div class="overlay-slider">
-                  <h4>Ubur-ubur Lembur</h4>
-                  <p>Raditya Dika</p>
-                </div>
-              </div>
-              <div class="box-book-list slider-3">
-                <div class="overlay-slider">
-                  <h4>Laskar Pelangi</h4>
-                  <p>Andrea Hirata</p>
-                </div>
+        <section class="main-content">
+          <div class="sliderrr box-slider-1" id="page1">
+            <a href="#page2" class="balik"> </a>
+            <div class="book-slider slider-1">
+              <div class="overlay-slider">
+                <h4>Dilan 1990</h4>
+                <p>Pidi Baiq</p>
               </div>
             </div>
+            <div class="book-slider slider-2">
+              <div class="overlay-slider">
+                <h4>Ubur-ubur Lembur</h4>
+                <p>Raditya Dika</p>
+              </div>
+            </div>
+            <div class="book-slider slider-3">
+              <div class="overlay-slider">
+                <h4>Laskar Pelangi</h4>
+                <p>Andrea Hirata</p>
+              </div>
+            </div>
+            <a href="#page2" class="terus"> </a>
           </div>
-        </div>
-        <div class="navigation-pane">
-          <div class="prev">
-            <img src="./assets/img/Arrow.png" alt="prev" />
+          <div class="sliderrr box-slider-1" id="page2">
+            <a href="#page1" class="balik"> </a>
+            <div class="book-slider slider-1">
+              <div class="overlay-slider">
+                <h4>Dilan 1990</h4>
+                <p>Pidi Baiq</p>
+              </div>
+            </div>
+            <div class="book-slider slider-2">
+              <div class="overlay-slider">
+                <h4>Ubur-ubur Lembur</h4>
+                <p>Raditya Dika</p>
+              </div>
+            </div>
+            <div class="book-slider slider-3">
+              <div class="overlay-slider">
+                <h4>Laskar Pelangi</h4>
+                <p>Andrea Hirata</p>
+              </div>
+            </div>
+            <a href="#page1" class="terus"> </a>
           </div>
-          <div class="next">
-            <img src="./assets/img/Arrow.png" alt="prev" />
-          </div>
-        </div>
+        </section>
         <div class="title-list-book">
           <h4 class="card-title">List Book</h4>
         </div>
@@ -184,7 +201,7 @@
             </div>
           </a>
         </div>
-      </div>
+      </section>
     </div>
 
     <!-- Modal -->

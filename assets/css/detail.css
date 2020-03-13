@@ -13,8 +13,11 @@
 
 .back {
   background-color: #ffffff;
-  width: 60px;
-  height: 60px;
+  background-image: url("../img/Arrow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   margin: 20px;
 }
@@ -32,7 +35,7 @@
 .control a {
   padding: 0 20px;
   color: #ffffff;
-  font-size: 25px;
+  font-size: 20px;
 }
 .img-overlay {
   position: absolute;
@@ -43,7 +46,7 @@
 .content {
   display: flex;
   flex-direction: column;
-  max-width: 850px;
+  width: 70%;
 }
 
 .detail-head {
@@ -61,12 +64,12 @@
 
 .status h4 {
   color: #99d815;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .detail-book h1 {
   margin-top: 20px;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .detail-book h5 {
@@ -74,7 +77,7 @@
 }
 
 .detail-text {
-  font-size: 20px;
+  /* font-size: 20px; */
   margin-top: 40px;
 }
 
@@ -82,6 +85,10 @@
   .detail-desc {
     flex-direction: column;
     margin-top: 150px;
+    width: 90%;
+  }
+  .content {
+    width: 90%;
   }
   .button-borrow {
     margin-top: 50px;

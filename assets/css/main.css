@@ -13,7 +13,9 @@
   font-family: "Airbnb";
   src: url("../fonts/AirbnbCereal-Medium.ttf") format("truetype");
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: Airbnb;
 }
