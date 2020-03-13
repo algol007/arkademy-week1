@@ -1,48 +1,96 @@
 .title {
+  padding: 30px;
   color: white;
-  font-size: 64px;
+  font-size: 50px;
 }
 
-.container {
+.container-login {
+  /* max-height: 100vh; */
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
+  overflow: hidden;
+}
+
+.register-page {
+  display: flex;
+  align-items: stretch;
+  height: 800px !important;
+}
+
+.register-overlay {
+  background: rgba(0, 0, 0, .4);
+  width: 60%;
+  min-height: 100vh;
+  /* height: 750px; */
+  position: absolute;
+  /* z-index: 0; */
+  overflow: hidden;
 }
 
 .auth-image {
   width: 60%;
-  padding: 80px 50px;
-  background-image: url("../img/mollie-sivaram-_1gBVgy8gIU-unsplash.png");
+  background: url('../img/mollie-sivaram-_1gBVgy8gIU-unsplash.png');
   background-size: cover;
-  height: 700px;
+  height: 750px;
   background-position: center center;
-  min-height: 100vh;
+  z-index: -1;
+  position: relative;
+}
+
+.auth-image__text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-content: space-between;
 }
 
 .auth-form {
   width: 40%;
   display: flex;
   flex-direction: column;
-  padding: 80px 50px 20px;
-  min-height: 100vh;
+  padding: 50px 50px 20px;
+  height: 100%;
   background: #ffffff;
   background-size: cover;
 }
 
-.logo {
+.auth-overlay {
+  background: rgba(0, 0, 0, .4);
+  width: 100%;
+  height: 100%;
   position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 100px;
-  height: 100px;
+  /* z-index: 0; */
 }
 
-.login-title,
-.login-intro {
+.text-footer {
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  color: #ffffff;
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.logo img {
+  width: 80px;
+  height: 80px;
+}
+
+.login-title, .login-intro {
   color: #424242;
 }
 
+.login-title {
+  font-size: 3em;
+}
+
 .intro {
-  padding: 50px 0;
+  padding: 40px 0;
 }
 
 .form-groups {
@@ -52,8 +100,27 @@
 }
 
 .login-intro {
-  font-size: 17px;
+  font-size: 1em;
   font-weight: lighter;
+}
+
+.login-input {
+  font-family: Airbnb;
+  font-size: 1em;
+  color: #424242;
+  width: 100%;
+}
+
+.login-input, .login-label {
+  border: none;
+  display: block;
+}
+
+.login-label {
+  font-family: Airbnb;
+  font-size: 0.8em;
+  color: #d0cccc;
+  width: 100%;
 }
 
 .checkbox {
@@ -74,8 +141,7 @@
   float: right;
 }
 
-.checkbox,
-.button-group {
+.checkbox, .button-group {
   border: none;
   padding: 0;
 }
@@ -83,13 +149,23 @@
 .check {
   display: flex;
 }
+
 .remember {
   margin-left: 10px;
   color: #d0cccc;
 }
 
+.remember, .forgot-password {
+  font-size: 0.9em !important;
+}
+
 .button-group {
   margin: 50px 0;
+}
+
+.footer-login {
+  position: absolute;
+  bottom: 0;
 }
 
 .intro-end {
@@ -107,6 +183,7 @@
 }
 
 /* start styling checkbox */
+
 .checkbox-label {
   display: block;
   position: relative;
@@ -141,7 +218,7 @@
   border: 1px solid #000000;
 }
 
-.checkbox-label input:checked ~ .checkbox-custom {
+.checkbox-label input:checked~.checkbox-custom {
   /* background-color: ; */
   border-radius: 2px;
   -webkit-transform: rotate(0deg) scale(1);
@@ -172,7 +249,7 @@
   -o-transition: all 0.3s ease-out;
 }
 
-.checkbox-label input:checked ~ .checkbox-custom::after {
+.checkbox-label input:checked~.checkbox-custom::after {
   -webkit-transform: rotate(45deg) scale(1);
   -ms-transform: rotate(45deg) scale(1);
   transform: rotate(45deg) scale(1);
@@ -186,6 +263,7 @@
   background-color: transparent;
   border-radius: 0;
 }
+
 /* end styling checkbox */
 
 .button-group a:nth-child(1) {
@@ -199,5 +277,12 @@
   }
   .auth-form {
     width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .auth-form {
+    padding-left: 1em;
+    padding-right: 1em;
   }
 }
