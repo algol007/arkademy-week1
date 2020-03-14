@@ -8,7 +8,7 @@ function sidebarHide() {
   const fullWidth = document.querySelector(".dashboard-wrap");
 
   sidebar.classList.toggle("show-sidebar");
-  fullWidth.style.paddingLeft = 0;
+  fullWidth.style.paddingLeft = "0";
   toggleButton.style.display = "block";
   sidebar.style.boxShadow = "none";
   buttonPrev.style.left = "30px";
