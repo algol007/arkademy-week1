@@ -44,9 +44,11 @@
       </div>
       <section id="main" class="main">
         <div class="custom-navbar">
+          <!-- <div class="toggle"> -->
           <button class="toggle-button">
             <img src="./assets/img/menu.png" alt="toggle-menu" />
           </button>
+          <!-- </div> -->
           <div class="all-menu">
             <ul class="all-menu__list">
               <li class="nav-item dropdown">
@@ -100,76 +102,110 @@
               ><img src="./assets/img/bookshelf.png" alt="logo-img"
             /></a>
             <a href="./index.html">Library</a>
+            <div class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Library</a
+              >
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">All Categories</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">All Time</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Search</a>
+              </div>
+            </div>
           </div>
         </div>
         <section class="main-content">
           <div class="sliderrr box-slider-1" id="page1">
-            <a href="#page2" class="balik"> </a>
-            <div class="book-slider slider-1">
+            <a href="#1" class="balik"> </a>
+            <div class="book-slider slider-1" id="#1">
               <div class="overlay-slider">
                 <h4>Dilan 1990</h4>
                 <p>Pidi Baiq</p>
               </div>
             </div>
-            <div class="book-slider slider-2">
+            <div class="book-slider slider-2" id="#2">
               <div class="overlay-slider">
                 <h4>Ubur-ubur Lembur</h4>
                 <p>Raditya Dika</p>
               </div>
             </div>
-            <div class="book-slider slider-3">
+            <div class="book-slider slider-3" id="#3">
               <div class="overlay-slider">
                 <h4>Laskar Pelangi</h4>
                 <p>Andrea Hirata</p>
               </div>
             </div>
-            <a href="#page2" class="terus"> </a>
-          </div>
-          <div class="sliderrr box-slider-1" id="page2">
-            <a href="#page1" class="balik"> </a>
-            <div class="book-slider slider-1">
+            <div class="book-slider slider-1" id="#4">
               <div class="overlay-slider">
                 <h4>Dilan 1990</h4>
                 <p>Pidi Baiq</p>
               </div>
             </div>
-            <div class="book-slider slider-2">
+            <div class="book-slider slider-2" id="#5">
               <div class="overlay-slider">
                 <h4>Ubur-ubur Lembur</h4>
                 <p>Raditya Dika</p>
               </div>
             </div>
-            <div class="book-slider slider-3">
+            <div class="book-slider slider-3" id="#6">
               <div class="overlay-slider">
                 <h4>Laskar Pelangi</h4>
                 <p>Andrea Hirata</p>
               </div>
             </div>
-            <a href="#page1" class="terus"> </a>
+            <a href="#4" class="terus"> </a>
           </div>
         </section>
         <div class="title-list-book">
           <h4 class="card-title">List Book</h4>
         </div>
         <div class="list-book">
-          <a href="./detail.html" class="costum-card">
-            <div class="card" style="width: 18rem;">
-              <img
-                src="./assets/img/covernya (1).png"
-                class="card-img-top"
-                alt="Dilan1990"
-              />
-              <div class="card-body">
-                <h5 class="card-title center">Dilan 1990</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  convallis lacus mi, sit amet vehicula nisl consequat id.
-                </p>
+          <a href="./detail.html" class="books">
+            <div class="books-head books-1"></div>
+            <div class="books-body">
+              <div class="books-title">
+                <h5>Dilan 1990</h5>
+              </div>
+              <div class="books-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                convallis lacus mi, sit amet vehicula nisl consequat id.
               </div>
             </div>
           </a>
-          <a href="./detail.html" class="costum-card">
-            <div class="card" style="width: 18rem;">
+          <a href="#" class="books">
+            <div class="books-head books-2"></div>
+            <div class="books-body">
+              <div class="books-title">
+                <h5>Sebuah Seni Untuk ...</h5>
+              </div>
+              <div class="books-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                convallis lacus mi, sit amet vehicula nisl consequat id.
+              </div>
+            </div>
+          </a>
+          <a href="#" class="books">
+            <div class="books-head books-3"></div>
+            <div class="books-body">
+              <div class="books-title">
+                <h5>React Native</h5>
+              </div>
+              <div class="books-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                convallis lacus mi, sit amet vehicula nisl consequat id.
+              </div>
+            </div>
+          </a>
+          <!-- <a href="./detail.html" class="costum-card">
+            <div class="card dashboard-card" style="width: 18rem;">
               <img
                 src="./assets/img/977994_346fec47-0d83-4c64-ac50-b3e121e797d0_700_700.png"
                 class="card-img-top"
@@ -183,23 +219,21 @@
                 </p>
               </div>
             </div>
-          </a>
-          <a href="./detail.html" class="costum-card">
-            <div class="card" style="width: 18rem;">
-              <img
-                src="./assets/img/3992f708-3a68-412d-b583-e19d6a02df80.png"
-                class="card-img-top"
-                alt="react"
-              />
-              <div class="card-body">
-                <h5 class="card-title center">React Native</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  convallis lacus mi, sit amet vehicula nisl consequat id.
-                </p>
-              </div>
+          </a> -->
+          <!-- <div class="card dashboard-card" style="width: 18rem;">
+            <img
+              src="./assets/img/3992f708-3a68-412d-b583-e19d6a02df80.png"
+              class="card-img-top"
+              alt="react"
+            />
+            <div class="card-body">
+              <h5 class="card-title center">React Native</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                convallis lacus mi, sit amet vehicula nisl consequat id.
+              </p>
             </div>
-          </a>
+          </div> -->
         </div>
       </section>
     </div>

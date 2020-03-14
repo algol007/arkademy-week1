@@ -114,6 +114,7 @@
 
 .search-box {
   padding: 10px 0;
+  transition: 1s;
 }
 
 .search-icon {
@@ -140,13 +141,11 @@
 .brand-logo a {
   color: #000000;
   font-size: 20px;
+  margin-right: 1em;
 }
 
-.rowsss {
-  width: 100%;
-  overflow: hidden;
-  position: absolute;
-  left: 0;
+.brand-logo .nav-item {
+  display: none;
 }
 
 .box-slider {
@@ -186,15 +185,70 @@
 }
 
 .list-book {
-  padding: 0 50px 100px;
+  margin: 0 auto;
+  width: 90%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
+  transition: 0.5s;
+  padding-bottom: 100px;
+}
+
+.list-book .books {
+  width: 250px;
+  height: 300px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  transition: 0.5s;
+  box-shadow: 10px 8px 10px 5px #dddddd;
+}
+
+.list-book .books:hover {
+  box-shadow: 6px 4px 10px 2px #dddddd;
+}
+.list-book .books-head {
+  width: 100%;
+  height: 60%;
+  /* background-color: aquamarine; */
+  border-radius: 20px 20px 0 0;
+}
+
+.list-book .books-body {
+  /* background-color: chartreuse; */
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  border-radius: 0 0 20px 20px;
+  text-align: center;
+  padding: 20px 10px;
+  border: 1px solid #eaeaea;
+}
+
+.books-body .books-text {
+  padding-bottom: 2em;
+  font-size: 14px;
+  font-weight: 300 !important;
+}
+
+.books .books-1 {
+  background-size: cover;
+  background-image: url("../img/covernya\ \(1\).png");
+}
+
+.books .books-2 {
+  background-size: cover;
+  background-image: url("../img/977994_346fec47-0d83-4c64-ac50-b3e121e797d0_700_700.png");
+}
+.books .books-3 {
+  background-size: cover;
+  background-image: url("../img/3992f708-3a68-412d-b583-e19d6a02df80.png");
 }
 
 .main {
   margin: 0 auto;
-  overflow: hidden;
+  overflow-x: hidden;
   box-sizing: border-box;
 }
 
@@ -231,10 +285,6 @@
   height: 300px;
 }
 
-.card {
-  margin: 20px 5px;
-}
-
 .overlay-slider {
   height: 50%;
   width: 100%;
@@ -242,50 +292,6 @@
   padding: 30px;
   color: #ffffff;
   border-radius: 0 0 20px 20px;
-}
-
-a.custom-card,
-a.custom-card:hover {
-  color: inherit;
-}
-
-.card {
-  box-shadow: 1px 0.5px 5px 1px #424242;
-}
-
-.card-body {
-  color: #000000;
-}
-
-.navigation-pane {
-  display: flex;
-  max-width: 100%;
-  justify-content: space-between;
-  z-index: -1;
-  /* margin-top: 100px; */
-  box-sizing: border-box;
-  position: absolute;
-  /* padding: ; */
-}
-
-.navigation-pane .prev,
-.navigation-pane .next {
-  position: absolute;
-  cursor: pointer;
-  background-color: #ffffff;
-  padding: 10px 15px;
-  border-radius: 50%;
-  top: 0px;
-  margin-top: 160px;
-}
-
-.navigation-pane .prev {
-  left: 30px;
-  transition: 1s;
-}
-
-.navigation-pane .next {
-  right: 30px;
 }
 
 .next,
@@ -300,6 +306,8 @@ a.custom-card:hover {
 .main-content {
   display: grid;
   grid-template-columns: repeat(2, 100%);
+  overflow: hidden;
+  height: 300px;
 }
 
 .sliderrr {
@@ -308,6 +316,7 @@ a.custom-card:hover {
   display: grid;
   grid-template-columns: repeat(4, auto);
   margin: 20px 0;
+  margin-left: -150px;
 }
 
 .sliderrr a {
@@ -326,7 +335,7 @@ a.custom-card:hover {
 a.balik {
   top: 100px;
   bottom: 0;
-  left: 0;
+  left: 180px;
   background-color: #ffffff;
   background-image: url("../img/Arrow.png");
   background-position: center;
@@ -336,7 +345,7 @@ a.balik {
 a.terus {
   top: 100px;
   bottom: 0;
-  right: 0;
+  right: -130px;
   background-color: #ffffff;
   background-image: url("../img/Arrow.png");
   background-position: center;
@@ -353,20 +362,30 @@ a.terus {
   background: green;
 }
 
-.item {
-  padding: 0 10px;
-  transition: 0.5s all;
-  height: 200px;
-  width: 400px;
+@media (max-width: 768px) {
+  .all-menu,
+  .brand-logo a:nth-child(2) {
+    display: none;
+  }
+
+  .brand-logo {
+    justify-content: flex-end;
+  }
+
+  .brand-logo a {
+    margin-right: 0;
+  }
+
+  .brand-logo .nav-item {
+    display: block;
+  }
 }
 
-.item img {
-  border-radius: 20px;
-  height: 200px;
-  width: 400px;
-}
-
-.item:hover {
-  margin: 0 50px;
-  transform: scale(1.2);
+@media (max-width: 450px) {
+  .search-box {
+    display: none;
+  }
+  .title-list-book {
+    padding: 20px 50px;
+  }
 }
