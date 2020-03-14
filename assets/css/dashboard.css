@@ -13,18 +13,18 @@
   position: fixed;
   /* display: none; */
   transition: 1s;
-  margin-left: -300px;
 }
 
 .dashboard-wrap {
   transition: 1s;
   max-width: 100vw;
+  padding-left: 300px;
   overflow: hidden;
   box-sizing: border-box;
 }
 
 .show-sidebar {
-  margin-left: 0;
+  margin-left: -300px;
   box-shadow: none;
   transition: 1s;
 }
@@ -60,7 +60,7 @@
   margin-top: 4em;
 }
 
-.sidebar-menu > a {
+.sidebar-menu>a {
   color: #000000;
   font-size: 1em;
   margin: 1em 0;
@@ -69,7 +69,7 @@
   transition: 0.5s;
 }
 
-.sidebar-menu > a:hover {
+.sidebar-menu>a:hover {
   color: #424242;
   transition: 0.5s;
 }
@@ -93,12 +93,10 @@
 .toggle-button {
   background: none;
   margin: 0 30px;
-  display: block;
+  display: none;
 }
 
-.all-menu,
-.search-box,
-.brand-logo {
+.all-menu, .search-box, .brand-logo {
   width: 80%;
   height: 100%;
 }
@@ -208,6 +206,7 @@
 .list-book .books:hover {
   box-shadow: 6px 4px 10px 2px #dddddd;
 }
+
 .list-book .books-head {
   width: 100%;
   height: 60%;
@@ -241,6 +240,7 @@
   background-size: cover;
   background-image: url("../img/977994_346fec47-0d83-4c64-ac50-b3e121e797d0_700_700.png");
 }
+
 .books .books-3 {
   background-size: cover;
   background-image: url("../img/3992f708-3a68-412d-b583-e19d6a02df80.png");
@@ -281,8 +281,88 @@
   background-size: cover;
 }
 
-.main-list {
-  height: 300px;
+.nav-pane {
+  display: inline-block;
+  /* width: 100vw; */
+}
+
+.main-content {
+  /* background-color: khaki; */
+  display: block;
+  width: 100vw;
+  margin: 20px 0;
+  height: 280px;
+  overflow: hidden;
+}
+
+.sliderrr {
+  /* background-color: lightcoral; */
+  overflow: hidden;
+  display: inline-block;
+  margin-left: -150px;
+  margin-right: -400px;
+}
+
+#prev {
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  border: none;
+  top: 200px;
+  left: 330px;
+  font-size: 2em;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: 1s all;
+  z-index: 1;
+}
+
+#next {
+  float: left;
+  cursor: pointer;
+  font-weight: bolder;
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  border: none;
+  top: 200px;
+  right: 30px;
+  font-size: 2em;
+  transition: 1s all;
+  z-index: 1;
+}
+
+.book-slider {
+  width: 400px;
+  height: 200px;
+  float: left;
+  margin: 30px 10px;
+  display: flex;
+  /* flex-direction: column-reverse; */
+}
+
+.slider-1 {
+  background-image: url("../img/slide1.png");
+  background-size: cover;
+}
+
+.slider-2 {
+  background-image: url("../img/slide2.png");
+  background-size: cover;
+}
+
+.slider-3 {
+  background-image: url("../img/slide3.png");
+  background-size: cover;
+}
+
+.slider-4 {
+  background-image: url("../img/slide4.png");
+  background-size: cover;
 }
 
 .overlay-slider {
@@ -292,31 +372,6 @@
   padding: 30px;
   color: #ffffff;
   border-radius: 0 0 20px 20px;
-}
-
-.next,
-.terus {
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-
-.main-content {
-  display: grid;
-  grid-template-columns: repeat(2, 100%);
-  overflow: hidden;
-  height: 300px;
-}
-
-.sliderrr {
-  width: 100%;
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  margin: 20px 0;
-  margin-left: -150px;
 }
 
 .sliderrr a {
@@ -332,50 +387,16 @@
   margin: 0 20px;
 }
 
-a.balik {
-  top: 100px;
-  bottom: 0;
-  left: 180px;
-  background-color: #ffffff;
-  background-image: url("../img/Arrow.png");
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-a.terus {
-  top: 100px;
-  bottom: 0;
-  right: -130px;
-  background-color: #ffffff;
-  background-image: url("../img/Arrow.png");
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.box-slider-1 {
-  width: 100%;
-  /* background: red; */
-}
-
-.box-slider-2 {
-  width: 100%;
-  background: green;
-}
-
 @media (max-width: 768px) {
-  .all-menu,
-  .brand-logo a:nth-child(2) {
+  .all-menu, .brand-logo a:nth-child(2) {
     display: none;
   }
-
   .brand-logo {
     justify-content: flex-end;
   }
-
   .brand-logo a {
     margin-right: 0;
   }
-
   .brand-logo .nav-item {
     display: block;
   }

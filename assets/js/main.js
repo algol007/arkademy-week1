@@ -1,7 +1,8 @@
 const sidebarButton = document.querySelector(".sidebar-button");
 const toggleButton = document.querySelector(".toggle-button");
-const buttonPrev = document.querySelector(".navigation-pane .prev");
-// const main = document.getElementById("main");
+const buttonPrev = document.getElementById("prev");
+const buttonNext = document.getElementById("next");
+const slideShow = document.querySelector(".sliderrr");
 
 function sidebarHide() {
   const sidebar = document.querySelector(".sidebar");
@@ -23,13 +24,46 @@ function sidebarShow() {
   halfWidth.style.paddingLeft = "300px";
   toggleButton.style.display = "none";
   sidebar.style.boxShadow = "0 6px 20px #424242";
-  buttonPrev.style.left = "310px";
+  buttonPrev.style.left = "330px";
   // console.log("hello");
 }
 
 sidebarButton.addEventListener("click", sidebarHide);
 toggleButton.addEventListener("click", sidebarShow);
-// main.addEventListener("click", console.log("hello"));
+buttonPrev.addEventListener("click", console.log("hello"));
+buttonNext.addEventListener("click", console.log("hello"));
+
+// Carousel
+
+let a = -150;
+let b = -1830;
+
+function goLeft() {
+  a = a + -420;
+
+  if (a < -1800) {
+    a = -150;
+  }
+  const margin = a + "px";
+  slideShow.style.marginLeft = margin;
+  // i = i + -150;
+  console.log(margin);
+}
+
+function goRight() {
+  b = b + 420;
+
+  const margin = b + "px";
+  slideShow.style.marginLeft = margin;
+  // i = i + -150;
+  if (b > -160) {
+    b = -1400;
+  }
+  console.log(margin);
+}
+
+buttonPrev.addEventListener("click", goLeft);
+buttonNext.addEventListener("click", goRight);
 
 function successInfo() {
   Swal.fire({
