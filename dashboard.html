@@ -13,16 +13,21 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link rel="icon" href="./assets/img/bookshelf.ico" />
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <body>
     <div class="dashboard-wrap">
-      <div class="sidebar">
+      <!-- Start Section Sidebar -->
+      <section class="sidebar">
+        <!-- Toggle Button -->
         <div class="menu-button">
           <button class="sidebar-button">
             <img src="./assets/img/menu.png" alt="toggle-menu" />
           </button>
         </div>
+        <!-- Toggle Button -->
+        <!-- User Profile -->
         <div class="profile">
           <img
             src="./assets/img/45584233_524138308054985_5877540939093210292_n.png"
@@ -30,20 +35,24 @@
           />
           <h4>Niki Zefanya</h4>
         </div>
+        <!-- User Profile -->
+        <!-- Sidebar Menu -->
         <div class="sidebar-menu">
           <a href="#">Explore</a>
           <a href="#">History</a>
           <a href="#" data-toggle="modal" data-target="#addModal">Add Book*</a>
           <a href="./login.html">Logout</a>
         </div>
-      </div>
+        <!-- Sidebar Menu -->
+      </section>
+      <!-- End Section Sidebar -->
+      <!-- Start Section Main -->
       <section id="main" class="main">
-        <div class="custom-navbar">
-          <!-- <div class="toggle"> -->
+        <!-- Start Navbar -->
+        <nav class="custom-navbar">
           <button class="toggle-button">
             <img src="./assets/img/menu.png" alt="toggle-menu" />
           </button>
-          <!-- </div> -->
           <div class="all-menu">
             <ul class="all-menu__list">
               <li class="nav-item dropdown">
@@ -92,11 +101,12 @@
               aria-label="Search"
             />
           </div>
+          <!-- Brand Logo -->
           <div class="brand-logo">
             <a href="./index.html"
               ><img src="./assets/img/bookshelf.png" alt="logo-img"
             /></a>
-            <a href="./index.html">Library</a>
+            <a class="text-library" href="./index.html">Library</a>
             <div class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -116,7 +126,10 @@
               </div>
             </div>
           </div>
-        </div>
+          <!-- Brand Logo -->
+        </nav>
+        <!-- End Navbar -->
+        <!-- Button Next Prev -->
         <ul class="nav-pane">
           <li class="balik">
             <button id="prev"><</button>
@@ -125,45 +138,47 @@
             <button id="next">></button>
           </li>
         </ul>
+        <!-- Button Next Prev -->
+        <!-- Start Slider Section -->
         <section class="main-content">
-          <ul class="sliderrr box-slider-1" id="page1">
-            <li class="book-slider slider-1" id="#1">
+          <ul class="sliderrr">
+            <li class="book-slider slider-1">
               <div class="overlay-slider">
                 <h4>Dilan 1990</h4>
                 <p>Pidi Baiq</p>
               </div>
             </li>
-            <li class="book-slider slider-2" id="#2">
+            <li class="book-slider slider-2">
               <div class="overlay-slider">
                 <h4>Ubur-ubur Lembur</h4>
                 <p>Raditya Dika</p>
               </div>
             </li>
-            <li class="book-slider slider-3" id="#3">
+            <li class="book-slider slider-3">
               <div class="overlay-slider">
                 <h4>Laskar Pelangi</h4>
                 <p>Andrea Hirata</p>
               </div>
             </li>
-            <li class="book-slider slider-1" id="#4">
+            <li class="book-slider slider-1">
               <div class="overlay-slider">
                 <h4>Dilan 1990</h4>
                 <p>Pidi Baiq</p>
               </div>
             </li>
-            <li class="book-slider slider-2" id="#5">
+            <li class="book-slider slider-2">
               <div class="overlay-slider">
                 <h4>Ubur-ubur Lembur</h4>
                 <p>Raditya Dika</p>
               </div>
             </li>
-            <li class="book-slider slider-3" id="#6">
+            <li class="book-slider slider-3">
               <div class="overlay-slider">
                 <h4>Laskar Pelangi</h4>
                 <p>Andrea Hirata</p>
               </div>
             </li>
-            <li class="book-slider slider-3" id="#6">
+            <li class="book-slider slider-3">
               <div class="overlay-slider">
                 <h4>Laskar Pelangi</h4>
                 <p>Andrea Hirata</p>
@@ -171,9 +186,11 @@
             </li>
           </ul>
         </section>
+        <!-- End Slider Section -->
         <div class="title-list-book">
           <h4 class="card-title">List Book</h4>
         </div>
+        <!-- List Book -->
         <div class="list-book">
           <a href="./detail.html" class="books">
             <div class="books-head books-1"></div>
@@ -212,10 +229,12 @@
             </div>
           </a>
         </div>
+        <!-- List Book -->
       </section>
+      <!-- End Section Main -->
     </div>
 
-    <!-- Modal -->
+    <!-- Start Modal -->
     <div
       class="modal fade bd-example-modal-lg"
       id="addModal"
@@ -287,9 +306,10 @@ Description...</textarea
         </div>
       </div>
     </div>
+    <!-- End Modal -->
 
+    <!-- Javascript -->
     <script src="./assets/js/main.js" async defer></script>
-
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

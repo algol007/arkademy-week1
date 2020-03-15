@@ -41,12 +41,13 @@ let b = -1830;
 function goLeft() {
   a = a + -420;
 
+  const margin = a + "px";
+  slideShow.style.marginLeft = margin;
+  slideShow.style.transition = "1s";
+  // i = i + -150;
   if (a < -1800) {
     a = -150;
   }
-  const margin = a + "px";
-  slideShow.style.marginLeft = margin;
-  // i = i + -150;
   console.log(margin);
 }
 
@@ -55,9 +56,10 @@ function goRight() {
 
   const margin = b + "px";
   slideShow.style.marginLeft = margin;
+  slideShow.style.transition = "1s";
   // i = i + -150;
   if (b > -160) {
-    b = -1400;
+    b = -1830;
   }
   console.log(margin);
 }
