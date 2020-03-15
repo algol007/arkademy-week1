@@ -1,7 +1,15 @@
+/*
+  Navigation Bar
+*/
+
 .navbar-brand img {
   max-width: 80px;
   max-height: 40px;
 }
+
+/*
+  Cover and Overlay
+*/
 
 .cover,
 .home-overlay {
@@ -44,9 +52,9 @@
   margin: 0 5px;
 }
 
-.form-inline label {
-  /* display: none; */
-}
+/*
+  Social Media Card
+*/
 
 .social-media,
 .mentor,
@@ -78,6 +86,8 @@
   cursor: pointer;
   transition: 0.5s;
   box-shadow: 10px 10px 10px #aaaaaa;
+  border-radius: 20px;
+  margin: 10px !important;
 }
 
 .card-home:hover,
@@ -96,7 +106,6 @@
 
 .social-card .card-home,
 .mentor-list .card-mentor {
-  /* border: 1px solid #000000; */
   margin: 20px 0;
 }
 
@@ -104,6 +113,10 @@ a.card-body,
 a.card-body:hover {
   color: inherit !important;
 }
+
+/*
+  Section Gallery
+*/
 
 .my-gallery {
   width: 100%;
@@ -146,20 +159,23 @@ a.card-body:hover {
   position: absolute;
 }
 
-.footer-option,
-.footer-social {
-  width: 50%;
-}
-
 .my-gallery__text {
   padding: 7rem;
 }
+
+/*
+  Mentor Section
+*/
 
 .mentor-list img {
   margin: 0 auto;
   text-align: center;
   max-width: 150px;
 }
+
+/*
+  Bottom Overlay Section
+*/
 
 .home-overlay {
   background-attachment: fixed;
@@ -180,6 +196,15 @@ a.card-body:hover {
 .home-overlay__content {
   color: #ffffff;
   padding: 80px 0;
+}
+
+/*
+  Footer
+*/
+
+.footer-option,
+.footer-social {
+  width: 50%;
 }
 
 .footer-end__content {
@@ -216,10 +241,11 @@ a.card-body:hover {
   justify-content: flex-end;
 }
 
+/*
+  Responsive view
+*/
+
 @media (max-width: 992px) {
-  .my-brand {
-    display: none;
-  }
   .social-card,
   .my-gallery,
   .mentor-list,
@@ -252,6 +278,9 @@ a.card-body:hover {
 }
 
 @media (max-width: 576px) {
+  .my-brand {
+    display: none;
+  }
   .home-overlay__content {
     padding: 50px 0;
   }

@@ -13,10 +13,12 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link rel="icon" href="./assets/img/bookshelf.ico" />
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <body>
-    <div class="cover-img">
+    <!-- Start Cover Section -->
+    <section class="cover-img">
       <div class="navigation">
         <a href="./dashboard.html" class="back"> </a>
         <div class="control">
@@ -24,11 +26,13 @@
           <a href="#" onclick="successInfo()">Delete</a>
         </div>
       </div>
-    </div>
+    </section>
+    <!-- End Cover Section -->
     <div class="img-overlay">
       <img src="./assets/img/book.png" alt="book" />
     </div>
-    <div class="detail-desc">
+    <!-- Start Detail Book -->
+    <section class="detail-desc">
       <div class="content">
         <div class="detail-head">
           <div class="detail-book">
@@ -58,11 +62,12 @@
         </p>
       </div>
       <div class="button-borrow">
-        <a href="#" type="button" class="btn btn-lg btn-warning">Borrow</a>
+        <a href="#" type="button" class="button-yellow">Borrow</a>
       </div>
-    </div>
+    </section>
+    <!-- End Detail Book -->
 
-    <!-- Modal -->
+    <!-- Modal Box-->
     <div
       class="modal fade bd-example-modal-lg"
       id="editModal"
@@ -127,7 +132,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac diam eget est 
             <button
               data-dismiss="modal"
               type="button"
-              class="btn btn-primary btn-lg button-save"
+              class="button-yellow button-save"
             >
               Save
             </button>
@@ -135,6 +140,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac diam eget est 
         </div>
       </div>
     </div>
+    <!-- Modal Box-->
+
     <script src="./assets/js/main.js" async defer></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <script

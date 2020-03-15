@@ -4,14 +4,16 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Login</title>
-    <meta name="theme-color" content="#317EFB" />
+    <meta name="theme-color" content="#424242" />
     <meta name="description" content="Exercise HTML CSS and Simple JS" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="./assets/img/bookshelf.ico" />
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <body>
     <div class="container-login">
-      <div class="auth-image">
+      <!-- Start Image Section -->
+      <section class="auth-image">
         <div class="auth-overlay"></div>
         <div class="auth-image__text">
           <div class="text-header">
@@ -21,15 +23,20 @@
             </h1>
             <h1 class="title"></h1>
           </div>
+          <!-- Image Credits -->
           <div class="text-footer">
             <p class="credit-photo">Photo by Mark Pan4ratte on Unsplash</p>
           </div>
+          <!-- Image Credits -->
         </div>
-      </div>
+      </section>
+      <!-- End Image Section -->
+      <!-- Start Auth Form Section -->
       <div class="auth-form">
         <a href="./index.html" class="logo">
           <img src="./assets/img/bookshelf.png" alt="Logo" />
         </a>
+        <!-- Start Intro -->
         <div class="intro">
           <h1 class="login-title">
             Login
@@ -41,12 +48,14 @@
             to your account
           </h5>
         </div>
+        <!-- End Intro -->
+        <!-- Start Form -->
         <form action="">
+          <!-- Start Input -->
           <div class="base-input">
             <div class="form-groups">
-              <label for="email" class="login-label">Email Adress</label>
+              <label for="email">Email Adress</label>
               <input
-                class="login-input"
                 type="email"
                 value="rebecca@gmail.com"
                 name="email"
@@ -64,23 +73,28 @@
               />
             </div>
           </div>
+          <!-- End Input -->
+          <!-- Start Checkbox -->
           <div class="form-groups checkbox">
             <div class="check">
-              <label for="checklist" class="login-label checkbox-label">
+              <label class="checkbox-label">
                 <input type="checkbox" id="checklist" />
                 <span class="checkbox-custom"></span>
+                <div class="remember">Remember Me</div>
               </label>
-              <div class="remember">Remember Me</div>
             </div>
             <div class="forgot">
               <a href="#" class="forgot-password">Forgot Password?</a>
             </div>
           </div>
+          <!-- End Checkbox -->
           <div class="form-groups button-group">
             <a href="./dashboard.html" class="button">Login</a>
             <a href="./register.html" class="button">Sign Up</a>
           </div>
         </form>
+        <!-- End Form -->
+        <!-- Start Footer -->
         <div class="footer-login">
           <p class="intro-end">
             By signing up, you agree to Book's
@@ -90,7 +104,9 @@
             <a href="#">Privacy Policy</a>
           </p>
         </div>
+        <!-- End Footer -->
       </div>
+      <!-- End Auth Form Section -->
     </div>
     <script src="" async defer></script>
   </body>

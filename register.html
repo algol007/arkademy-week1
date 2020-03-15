@@ -4,14 +4,16 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Register</title>
-    <meta name="theme-color" content="#317EFB" />
+    <meta name="theme-color" content="#424242" />
     <meta name="description" content="Exercise HTML CSS and Simple JS" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="./assets/img/bookshelf.ico" />
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <body>
     <div class="container-login">
-      <div class="auth-image">
+      <!-- Start Image Section -->
+      <section class="auth-image">
         <div class="auth-overlay"></div>
         <div class="auth-image__text">
           <div class="text-header">
@@ -20,15 +22,20 @@
               to the world
             </h1>
           </div>
+          <!-- Image Credit -->
           <div class="text-footer">
             <p class="credit-photo">Photo by Mark Pan4ratte on Unsplash</p>
           </div>
+          <!-- Image Credit -->
         </div>
-      </div>
-      <div class="auth-form">
+      </section>
+      <!-- End Image Section -->
+      <!-- Start Auth Form Section -->
+      <section class="auth-form">
         <a href="./index.html" class="logo">
           <img src="./assets/img/bookshelf.png" alt="Logo" />
         </a>
+        <!-- Start Intro -->
         <div class="intro">
           <h1 class="login-title">
             Register
@@ -40,14 +47,17 @@
             to create account
           </h5>
         </div>
+        <!-- End Intro -->
+        <!-- Start Form -->
         <form action="">
+          <!-- Start Input -->
           <div class="base-input">
             <div class="form-groups">
               <label for="username" class="login-label">Username</label>
               <input
                 type="text"
                 class="login-input"
-                placeholder="Rebecca"
+                value="Rebecca"
                 name="username"
                 id="username"
               />
@@ -57,7 +67,7 @@
               <input
                 class="login-input"
                 type="text"
-                placeholder="Rebecca Poetri Rizky"
+                value="Rebecca Poetri Rizky"
                 name="fullname"
                 id="fullname"
               />
@@ -67,7 +77,7 @@
               <input
                 class="login-input"
                 type="email"
-                placeholder="rebecca@gmail.com"
+                value="rebecca@gmail.com"
                 name="email"
                 id="email"
               />
@@ -76,18 +86,23 @@
               <label for="password" class="login-label">Password</label>
               <input
                 class="login-input"
-                type="password"
-                placeholder="****************"
+                type="text"
+                value="****************"
                 name="password"
                 id="password"
               />
             </div>
           </div>
+          <!-- End Input -->
+          <!-- Button Group -->
           <div class="form-groups button-group">
             <a href="#" class="button">Sign Up</a>
             <a href="./login.html" class="button">Login</a>
           </div>
+          <!-- Button Group -->
         </form>
+        <!-- End Form -->
+        <!-- Start Footer -->
         <div class="footer-login">
           <p class="intro-end">
             By signing up, you agree to Book's
@@ -97,7 +112,8 @@
             <a href="#">Privacy Policy</a>
           </p>
         </div>
-      </div>
+        <!-- End Footer -->
+      </section>
     </div>
     <script src="" async defer></script>
   </body>
